@@ -1,0 +1,258 @@
+.h5{
+    font-weight: 600;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.intro-wrapper {
+   
+}
+
+#background-video {
+    /* width: 100vw;
+    height: 100vh; */
+    object-fit: cover;
+    position:absolute;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    z-index: -1;
+  }
+
+.intro-container {
+    padding: 220px 50px;
+}
+
+.introh1 {
+    font-weight: 700;
+    font-size: 3.7rem;
+}
+
+.intro-button {
+    padding: 0.5rem 2rem;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+/* quote  */
+
+.quote-container {
+    padding: 100px 30px;
+}
+
+.quoteh3 {
+    font-weight: 800;
+}
+
+.quotep {
+    font-size: 1.2rem;
+}
+
+.quote-cards {
+    margin: 0 auto;
+
+}
+
+.quote-card-icon {
+    color: #0dcaf0;
+}
+.quote-card-icon:hover {
+    color: white;
+}
+.quote-card {
+    
+    padding: 30px 0;
+    /* margin: 1rem; */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+
+}
+
+.quote-card:hover {
+    background-color: #0dcaf0;
+    background-image: linear-gradient(160deg, #0dcaf0 0%, #80D0C7 100%);
+    color: white;
+    transition: all 2s;
+}
+
+/* about */
+
+.about-wrapper {
+    background-image: url('../assets/images/dumbbell.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-container {
+    padding: 120px 30px;
+}
+
+.about-cards {
+    /* margin: 0 auto; */
+}
+
+.about-card {
+    padding: 20px 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+
+
+    background-image: linear-gradient(to bottom, #000000, #252425, #434347, #60666b, #7f8c8d);
+    /* background: rgb(127,140,141);
+background: linear-gradient(90deg, rgba(127,140,141,1) 0%, rgba(0,0,0,1) 100%); */
+    /* background: rgb(139,147,154);
+background: linear-gradient(90deg, rgba(139,147,154,1) 0%, rgba(91,100,103,1) 100%); */
+
+
+    /* background-image: linear-gradient(to bottom, #28282b, #2d2f34, #31363d, #343d46, #36454f); */
+}
+.about-card:hover{
+    background-color: #0dcaf0;
+    background-image: linear-gradient(160deg, #0dcaf0 0%, #80D0C7 100%);
+}
+.about-image{
+    border-radius: 12px;
+}
+
+/* contact */
+.contact-container{
+    padding: 60px 0;
+}
+
+.maps-frame{
+    width: 900;
+    height: 300;
+}
+
+/* pricing  */
+.price-container{
+    padding: 80px 0;
+}
+.price-card-heading{
+    margin-top: 10px;
+    background-color: black;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 900;
+}
+.price-tag{
+    font-weight: 800;
+}
+
+.price-card{
+    padding: 20px 10px;
+    margin: 0 auto;
+    box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+}
+
+.price-card:hover{
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #393939 100%);
+    color: goldenrod;
+    transition: all 2s;
+}
+
+.price-card-heading:hover{
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #393939 100%);
+}
+
+/* claim your offer  */
+
+.offer-wrapper{
+    background-color: #000000;
+}
+.offer-container{
+    padding: 80px 0;
+    color: white;
+    width:60%;
+}
+
+.offer-button{
+    padding: 0.5rem 2rem;
+}
+
+/* navbar  */
+.custom-navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* .brand-logo{
+    
+} */
+
+/* MOBILE RATIO  */
+
+/* Maximum aspect ratio */
+@media (max-aspect-ratio: 3/2) {
+    /* navbar  */
+    .brand-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-mob-a:hover {
+        color: #0dcaf0;
+        border-bottom: 1px solid #0dcaf0;
+    }
+    /* intro  */
+    #background-video {
+        display: none;
+    }
+    .intro-wrapper{
+        background-image: url('../assets/images/cover4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .intro-container{
+        padding: 150px 20px;
+    }
+    .introh1{
+        font-size: 28px;
+    }
+    .introh4{
+        font-size: 16px;
+    }
+    /* quote card  */
+    .quote-container{
+        padding: 60px 20px;
+    }
+    .quote-card{
+        margin-top: 2rem;
+    }
+    /* about  */
+    .about-container{
+        padding: 60px 20px;
+    }
+    .about-card{
+        margin-top: 2rem;
+    }
+    /* prcing  */
+    .price-container{
+        padding: 60px 20px;
+    }
+    .price-card{
+        margin-top: 2rem;
+    }
+    /* contact  */
+    .contact-container{
+        padding: 60px 20px;
+    }
+    .maps-frame{
+        width: 100%;
+        height: 300;
+    }
+    /* footer  */
+    
+    
+  }

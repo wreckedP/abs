@@ -1,0 +1,73 @@
+.h5{
+    font-weight: 600;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.intro-coch-wrapper {
+    background-image: url('../assets/images/cover4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.intro-coch-container {
+    padding: 150px 50px;
+}
+
+.intro-coch-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.7rem;
+}
+
+.intro-coch-button {
+    padding: 0.5rem 2rem;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+/* form  */
+.consult-container{
+    padding: 60px 30px
+}
+.consult-image-container{
+    background-image: url('../assets/images/cover2.jpg');
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    /* background-attachment: fixed; */
+}
+.consult-image{
+    border-radius: 10px;
+}
+.consult-h1{
+    font-weight: 700;
+}
+
+.quote-cards-coach{
+    margin: 0 1rem;
+}
+
+/* mobile view  */
+@media (max-aspect-ratio: 3/2) {
+    .intro-coch-h1{
+        font-size: 28px;
+    }
+    .consult-image-container{
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    /* intro  */
+    .intro-coch-container{
+        padding: 150px 20px;
+    }
+    .intro-coch-h1{
+        font-size: 28px;
+    }
+    .introintro-coch-h4{
+        font-size: 16px;
+    }
+}

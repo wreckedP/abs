@@ -1,0 +1,261 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <!-- aos css  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- w3 cdn  -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- font awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/indexStyles.css">
+
+    <link rel="stylesheet" href="./css/coaching.css">
+    <!-- custom navbar css  -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <title>Affordable fitness packages</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div>
+        <nav id="navigation" style="background-color: rgba(0, 0, 0, 0.5);"
+            class="navbar navbar-expand-lg navbar-dark fixed-top text-white">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="./index.html"><img id="logo" class="brandlogo" src="assets/images/logo6.png"
+                    width="180" height="60" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-md-auto gap-2 text-center">
+                        <li class="nav-item rounded">
+                            <a class="nav-link nav-mob-a" aria-current="page" href="./index.html#intro">
+                                <i class='fa fa-home'></i></a>
+                        </li>
+                        <li class="nav-item rounded">
+                            <a class="nav-link nav-mob-a" href="./index.html#about">About</a>
+                        </li>
+                        <li class="nav-item rounded">
+                            <a class="nav-link nav-mob-a" href="./index.html#price"><i
+                                    class="bi bi-telephone-fill me-2"></i>Packages</a>
+                        </li>
+                        <li class="nav-item rounded">
+                            <a class="nav-link nav-mob-a" href="./index.html#about"><i
+                                    class="bi bi-telephone-fill me-2"></i>Services</a>
+                        </li>
+                        <li class="nav-item rounded">
+                            <a class="nav-link nav-mob-a" href="./index.html#contact"><i
+                                    class="bi bi-telephone-fill me-2"></i>Contact</a>
+                        </li>
+                        <li class="nav-item rounded">
+                            <a class="nav-link nav-mob-a text-success active" href="./coaching.html"><i
+                                    class="bi bi-telephone-fill me-2"></i>Claim Offer</a>
+                        </li>
+
+                        <ul class='navbar-nav'>
+
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- intro -->
+    <div id="intro-coach" class="intro-coch-wrapper">
+        <div class="intro-coch-container container">
+            <h1 class="intro-coch-h1 text-info">LET'S START</h1>
+            <h1 class="intro-coch-h1 text-white">YOUR JOURNEY</h1>
+        </div>
+    </div>
+    <div class="consult-wrapper">
+        <div class="consult-container container">
+            <h1 class="consult-h1">CONSULTATION!</h1>
+            <p class="consult-p">Enter your details in the form below and you’ll be contacted to arrange the best time
+                to discuss your
+                health and wellbeing goals. If after your consultation you choose to work with me, that's great. If not,
+                that's cool too.</p>
+            <div class="contact-form row">
+                <div class="col-md-4 consult-image-container">
+                    <!-- <img class="consult-image" src="./assets/images/cover2.jpg" alt="img here" width="100%"> -->
+                </div>
+                <div class="col-md-8">
+                    <!-- form start  -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label fw-bold">Name</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                            <div id="name" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label fw-bold">Phone</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="trial">
+                            <label class="form-check-label fw-bold" for="trial">are you interested in a free
+                                trial
+                                session</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="time" class="form-label fw-bold">How much time do you feel like training</label>
+                            <input type="text" class="form-control" id="time">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label fw-bold">Comments</label>
+                            <textarea type="text" class="form-control" id="comments"></textarea>
+                        </div>
+                        <button type="button" onclick="sendEmail()" class="btn btn-outline-dark intro-button">Submit</button>
+                    </form>
+                    <!-- form ends  -->
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+
+<!-- quote cards  -->
+<div class="row quote-cards quote-cards-coach text-center">
+    <!-- card 1 -->
+    <div class="card quote-card col-md-3" data-aos="fade-up">
+        <h1 class="quote-card-icon"><i class="fa fa-dumbbell"></i></h1>
+        <h5>CONFIDENCE BOOST</h5>
+        <p class="p-2">We don't only focus on the image in the mirror, but also how you feel in your skin.
+            Achieving milestones with your body will transfer into your daily life as increased confidence.
+        </p>
+    </div>
+    <!-- card 2 -->
+    <div class="card quote-card col-md-3" data-aos="fade-up">
+        <h1 class="quote-card-icon"><i class="fa fa-walking"></i></h1>
+        <h5>ATHLETIC FIGURE</h5>
+        <p class="p-2">If your busy professional life pushed your physical fitness to the backseat, there is
+            a solution. The Get Fit By Abs online plans will help you achieve your desired body image in no
+            time.</p>
+    </div>
+    <!-- card 3 -->
+    <div class="card quote-card col-md-3" data-aos="fade-up">
+        <h1 class="quote-card-icon"><i class="fa fa-heart"></i></h1>
+        <h5>QUALITY OF LIFE</h5>
+        <p class="p-2">The ultimate goal is for you to enjoy your life to the fullest, engage in social
+            situations confidently and take up events you always wanted without limitations of your body.
+        </p>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="py-5 footer-wrapper container">
+    <div class="row" style="margin: 0 auto;">
+        <div class="col-md-3 col-xs-6">
+            <h5>SERVICES</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html#about" class="nav-link p-0 text-muted">One Person
+                        training</a></li>
+                <li class="nav-item mb-2"><a href="./index.html#about" class="nav-link p-0 text-muted">Duo training</a>
+                </li>
+                <li class="nav-item mb-2"><a href="./index.html#about" class="nav-link p-0 text-muted">Group
+                        training</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-6">
+            <h5>COMPANY</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html#intro" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="./index.html#about" class="nav-link p-0 text-muted">About</a></li>
+                <li class="nav-item mb-2"><a href="./index.html#quote" class="nav-link p-0 text-muted">Quote</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-6">
+            <h5>SUPPORT</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html#contact" class="nav-link p-0 text-muted">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <h5>ADDRESS</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html#contact" class="nav-link p-0 text-muted">Bloemendalerweg
+                        41A</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="./index.html">GET FIT MY ABS</a></li>
+
+        </ul>
+    </div>
+</footer>
+
+<!-- bootstrap js cdn  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- font awesome kit  -->
+<script src="https://kit.fontawesome.com/ad6139dd5a.js" crossorigin="anonymous"></script>
+<!-- aos js  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- navbar script  -->
+<script>
+    function HandleScroll() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("navigation").style.backgroundColor = '#191919'
+        } else {
+            document.getElementById("navigation").style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+
+        }
+    }
+    window.onscroll = function () {
+        HandleScroll()
+    };
+</script>
+<!-- stmp mention you mail credentials here -->
+<script>
+    function sendEmail(){
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var trainingTime = document.getElementById('time').value;
+        var comments = document.getElementById('comments').value;
+        var freetrial = document.getElementById('trial').value;
+
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "ux.illusion2@gmail.com", // smpt from domain email id
+            Password : "B8CE703454B50FCBABBD9B9CA224B3617A33", // smpt user password
+            To : 'uxair.work@gmail.com', // send to email
+            From : "ux.illusion2@gmail.com", // from email
+            Subject : "Trainee Request", // subject
+            Body :  "Name: " + name +
+                    "Email: " + email +
+                    "Phone: " + phone +
+                    "Training Time: " + trainingTime +
+                    "Commnets: " + comments + 
+                    "Free Trial: " + freetrial, 
+        }).then(
+          message => alert(message)
+        );
+    }
+</script>
+<script src="./js/smtp.js"></script>
+
+</html>
