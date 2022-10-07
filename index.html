@@ -61,7 +61,7 @@
     <!-- intro -->
     <div id="intro" class="intro-wrapper">
         <video width="100%" id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-            <source src="./assets/videos/cvv3.mp4" type="video/mp4">
+            <source id="source" src="./assets/videos/cvv3.mp4" type="video/mp4">
         </video>
         <div class="intro-container container">
             <h1 class="introh1 text-info">TAKE YOUR FITNESS</h1>
@@ -317,6 +317,15 @@
     window.onscroll = function () {
         HandleScroll()
     };
+    
+    //random cover video
+    var myVix = new Array("./assets/videos/cvv1.mp4", "./assets/videos/cvv3.mp4", "./assets/videos/cvv6.mp4");
+    var randomNum = Math.floor(Math.random() * myVix.length);
+    var video = document.getElementById('background-video');
+    var source = document.getElementById('source');
+    source.setAttribute("src", myVix[randomNum]);
+    video.load();
+    video.play();
 </script>
 
 </html>
