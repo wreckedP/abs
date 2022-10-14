@@ -92,14 +92,7 @@ h1 {
     margin: 0 auto;
     border-radius: 10px;
     text-align: center;
-    background-image: linear-gradient(
-        to bottom,
-        #000000,
-        #252425,
-        #434347,
-        #60666b,
-        #7f8c8d
-    );
+    background-image: linear-gradient(to bottom, #252425, #434347, #60666b);
 }
 .about-card:hover {
     background-color: #0dcaf0;
@@ -187,8 +180,16 @@ h1 {
         color: #0dcaf0;
         border-bottom: 1px solid #0dcaf0;
     }
+    /* intro  */
     #background-video {
-        height: 52vh;
+        display: none;
+    }
+    .intro-wrapper {
+        background-image: url('../assets/images/cover4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
     }
     .intro-container {
         padding: 150px 20px;
