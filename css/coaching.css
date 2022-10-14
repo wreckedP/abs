@@ -1,7 +1,7 @@
-.h5{
+.h5 {
     font-weight: 600;
 }
-h1{
+h1 {
     font-family: 'Montserrat', sans-serif;
 }
 .intro-coch-wrapper {
@@ -29,45 +29,45 @@ h1{
 }
 
 /* form  */
-.consult-container{
-    padding: 60px 30px
+.consult-container {
+    padding: 60px 30px;
 }
-.consult-image-container{
+.consult-image-container {
     background-image: url('../assets/images/cover2.jpg');
     background-size: cover;
     background-position: top;
     border-radius: 10px;
     /* background-attachment: fixed; */
 }
-.consult-image{
+.consult-image {
     border-radius: 10px;
 }
-.consult-h1{
+.consult-h1 {
     font-weight: 700;
 }
 
-.quote-cards-coach{
+.quote-cards-coach {
     margin: 0 1rem;
 }
 
 /* mobile view  */
 @media (max-aspect-ratio: 3/2) {
-    .intro-coch-h1{
+    .intro-coch-h1 {
         font-size: 28px;
     }
-    .consult-image-container{
+    .consult-image-container {
         height: 10rem;
         margin-bottom: 1rem;
     }
 
     /* intro  */
-    .intro-coch-container{
+    .intro-coch-container {
         padding: 150px 20px;
     }
-    .intro-coch-h1{
+    .intro-coch-h1 {
         font-size: 28px;
     }
-    .introintro-coch-h4{
+    .introintro-coch-h4 {
         font-size: 16px;
     }
 }
