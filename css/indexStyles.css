@@ -7,14 +7,15 @@ h1 {
 }
 #background-video {
     width: 100vw;
-    height: 76vh;
+    min-height: 24vw;
+    max-height: 600px;
     object-fit: cover;
     position: absolute;
     z-index: -1;
 }
-
 .intro-container {
-    padding: 220px 50px;
+    padding: 200px 50px;
+    margin-top: -20px;
 }
 
 .introh1 {
@@ -29,10 +30,6 @@ h1 {
 }
 
 /* quote  */
-
-.quote-container {
-    padding: 100px 30px;
-}
 
 .quoteh3 {
     font-weight: 800;
