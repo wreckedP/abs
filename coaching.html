@@ -105,23 +105,18 @@
         </div>
         <div class="consult-wrapper">
             <div class="consult-container container">
-                <h1 class="consult-h1">Contact</h1>
-                <p class="consult-p">
-                    Enter your details in the form below and you’ll be contacted
-                    to arrange the best time to discuss your health and
-                    wellbeing goals. If after your consultation you choose to
-                    work with me, that's great. If not, that's cool too.
-                </p>
                 <div class="contact-form row">
                     <div class="col-md-4 consult-image-container">
                         <!-- <img class="consult-image" src="./assets/images/cover2.jpg" alt="img here" width="100%"> -->
                     </div>
                     <div class="col-md-8">
+                <h1 class="consult-h1">Gratis intake aanvraag</h1>
+
                         <!-- form start  -->
                         <form>
                             <div class="mb-3">
                                 <label
-                                    for="exampleInputEmail1"
+                                    for="name"
                                     class="form-label fw-bold"
                                     >Naam:</label
                                 >
@@ -153,13 +148,13 @@
                                 />
                             </div>
                             <div class="mb-3">
-                                <label for="time" class="form-label fw-bold"
+                                <label for="comments" class="form-label fw-bold"
                                     >Wat is uw fitness doel?</label
                                 >
                                 <input
                                     type="text"
                                     class="form-control"
-                                    id="time"
+                                    id="comments"
                                 />
                             </div>
                             <div class="mb-3 form-check">
@@ -197,9 +192,8 @@
             <h1 class="quote-card-icon"><i class="fa fa-dumbbell"></i></h1>
             <h5>KRACHT-TRAINING</h5>
             <p class="p-2">
-                We don't only focus on the image in the mirror, but also how you
-                feel in your skin. Achieving milestones with your body will
-                transfer into your daily life as increased confidence.
+                Voor een goed uitzient lichaam kan bij ons ook voor op maat
+                gemaakte krachttraingen terecht.
             </p>
         </div>
         <!-- card 2 -->
@@ -207,9 +201,8 @@
             <h1 class="quote-card-icon"><i class="fa fa-walking"></i></h1>
             <h5>CONDITIE-OPBOUWEN</h5>
             <p class="p-2">
-                If your busy professional life pushed your physical fitness to
-                the backseat, there is a solution. The Get Fit By Abs online
-                plans will help you achieve your desired body image in no time.
+                Als je het gevoel hebt dat je conditie jou af en toe in de steek
+                laat, is dit wellicht wat voor jou.
             </p>
         </div>
         <!-- card 3 -->
@@ -217,9 +210,8 @@
             <h1 class="quote-card-icon"><i class="fa fa-heart"></i></h1>
             <h5>VOEDING-SCHEMA</h5>
             <p class="p-2">
-                The ultimate goal is for you to enjoy your life to the fullest,
-                engage in social situations confidently and take up events you
-                always wanted without limitations of your body.
+                Met behulp van zorgvuldige planning zullen wij samen een schema
+                maken om uw doelen te behalen.
             </p>
         </div>
     </div>
@@ -268,14 +260,7 @@
                         <a
                             href="./index.html#about"
                             class="nav-link p-0 text-muted"
-                            >About</a
-                        >
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a
-                            href="./index.html#quote"
-                            class="nav-link p-0 text-muted"
-                            >Quote</a
+                            >Over</a
                         >
                     </li>
                 </ul>
@@ -294,7 +279,7 @@
                 </ul>
             </div>
             <div class="col-md-3 col-xs-6">
-                <h5>ADDRESS</h5>
+                <h5>ADRESS</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a
@@ -353,7 +338,6 @@
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var phone = document.getElementById('phone').value;
-            var trainingTime = document.getElementById('time').value;
             var comments = document.getElementById('comments').value;
             var freetrial = document.getElementById('trial').value;
 
@@ -361,18 +345,16 @@
                 Host: 'smtp.elasticemail.com',
                 Username: 'ux.illusion2@gmail.com', // smpt from domain email id
                 Password: 'B8CE703454B50FCBABBD9B9CA224B3617A33', // smpt user password
-                To: 'uxair.work@gmail.com', // send to email
-                From: 'ux.illusion2@gmail.com', // from email
+                // To: 'uxair.work@gmail.com', // send to email
+                // From: 'ux.illusion2@gmail.com', // from email
                 Subject: 'Trainee Request', // subject
                 Body:
-                    'Name: ' +
+                    'Naam: ' +
                     name +
                     'Email: ' +
                     email +
-                    'Phone: ' +
+                    'Telefoon: ' +
                     phone +
-                    'Training Time: ' +
-                    trainingTime +
                     'Commnets: ' +
                     comments +
                     'Free Trial: ' +
