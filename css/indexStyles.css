@@ -125,6 +125,7 @@ h1 {
 }
 .price-tag {
     font-weight: 800;
+    padding-top: 12px;
 }
 
 .price-card {
@@ -140,11 +141,6 @@ h1 {
     background-image: linear-gradient(160deg, #000000 0%, #393939 100%);
     color: goldenrod;
     transition: all 2s;
-}
-
-.price-card-heading:hover {
-    background-color: #000000;
-    background-image: linear-gradient(160deg, #000000 0%, #393939 100%);
 }
 
 /* claim your offer  */
