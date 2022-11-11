@@ -43,7 +43,7 @@ h1 {
 }
 
 .quote-cards {
-    margin: 0 auto;
+    padding: 60px;
 }
 
 .quote-card-icon {
@@ -54,7 +54,6 @@ h1 {
 }
 .quote-card {
     padding: 30px 0;
-    /* margin: 1rem; */
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.15);
@@ -80,16 +79,15 @@ h1 {
 }
 
 .about-container {
-    padding: 120px 30px;
+    padding: 100px 10px;
 }
 
 .about-cards {
-    /* margin: 0 auto; */
+    margin-top: 40px;
 }
 
 .about-card {
-    padding: 20px 10px;
-    margin: 0 auto;
+    padding: 20px ;
     border-radius: 10px;
     text-align: center;
     background-image: linear-gradient(to bottom, #252425, #434347, #60666b);
@@ -143,8 +141,8 @@ h1 {
     transition: all 2s;
 }
 
-/* claim your offer  */
 
+/* claim your offer  */
 .offer-wrapper {
     background-color: #000000;
 }
@@ -208,7 +206,7 @@ h1 {
         padding: 60px 20px;
     }
     .about-card {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     /* prcing  */
     .price-container {
