@@ -3,6 +3,8 @@
 }
 .about-image {
     padding-bottom: 15px;
+    
+
 }
 
 h1 {
@@ -83,11 +85,13 @@ h1 {
 }
 
 .about-cards {
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .about-card {
+    width: 20rem;
     padding: 20px ;
+    margin: 0 0.5rem;
     border-radius: 10px;
     text-align: center;
     background-image: linear-gradient(to bottom, #252425, #434347, #60666b);
@@ -207,6 +211,8 @@ h1 {
     }
     .about-card {
         margin-top: 1rem;
+    /* width: 20rem; */
+
     }
     /* prcing  */
     .price-container {
